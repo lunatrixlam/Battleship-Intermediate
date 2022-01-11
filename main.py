@@ -17,8 +17,7 @@ if answer == "Y":
 elif answer == "N":
     print("Well, it's too late now... Good luck!")
 else:
-    print(f"'{answer}' wasn't an option, so I will take that as a 'YES'... Good luck!"
-    )
+    print(f"'{answer}' wasn't an option, so I will take that as a 'YES'... Good luck!")
 
 print()
 
