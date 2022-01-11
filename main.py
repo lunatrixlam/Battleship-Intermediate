@@ -26,16 +26,12 @@ print()
 board = []  # creates an empty list to set-up our board
 
 for i in range(5):
-    board.append(
-        ["0"] * 5
-    )  # appends five "0"'s per iteration to our empty board list; there are 5 total iterations since range(5)
+    board.append(["0"] * 5)  # appends five "0"'s per iteration to our empty board list; there are 5 total iterations since range(5)
 
 
 def print_board(board):
     for row in board:  # for each row in the board
-        print(
-            " ".join(row)
-        )  # print each row separately, and use the .join method to combine the items in each row as a string to remove the brackets and commas. Then use the space separator to join each element of each row.
+        print(" ".join(row))# print each row separately, and use the .join method to combine the items in each row as a string to remove the brackets and commas. Then use the space separator to join each element of each row.
 
 
 print_board(board)  # displays our Battleship board!
@@ -53,11 +49,11 @@ def random_col(board):
 
 correct_answers = []
 
-for i in range(total_ships):  # do this # of total_ships times
+for i in range(total_ships):  # do this for # of total_ships times
     ship_row = random_row(board)
     ship_col = random_col(board)
 
-    correct_answers.append((ship_row, ship_col)) # store the tuples in a correct_answers list for verification
+    correct_answers.append((ship_row, ship_col)) # store the coordintes as tuples in a correct_answers list for verification
 
 print("My Secret Battleship Coordinates:")
 print(correct_answers)
@@ -74,7 +70,7 @@ for turn in range((total_guesses)):
     guess_col = int(input("Guess Col: "))
     print()
 
-    user_guess = (guess_row, guess_col)
+    user_guess = (guess_row, guess_col) # stores the user_guess as a tuple
 
     for i in correct_answers:
         if user_guess in correct_answers:   # checks if tuple item exists in correct_answers
