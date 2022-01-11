@@ -2,8 +2,8 @@
 
 # First, we need to welcome the player:
 
-total_guesses = 4
-total_ships = 2
+total_guesses = 5
+total_ships = 3
 
 print("Welcome to our Battleship game!")
 print(f"You will have {total_guesses} guesses to sink {total_ships} battleships.")
@@ -17,7 +17,7 @@ if answer == "Y":
 elif answer == "N":
     print("Well, it's too late now... Good luck!")
 else:
-    print(f"'{answer}' wasn't an option, so I will take that as a 'YES'... Good luck!")
+    print(f"\"{answer}\" wasn't an option, so I will take that as a \"YES\"... Good luck!")
 
 print()
 
@@ -53,7 +53,7 @@ for i in range(total_ships):  # do this for # of total_ships times
     ship_row = random_row(board)
     ship_col = random_col(board)
 
-    correct_answers.append((ship_row, ship_col)) # store the coordintes as tuples in a correct_answers list for verification
+    correct_answers.append((ship_row, ship_col)) # store the coordinates as tuples in a correct_answers list for verification
 
 print("My Secret Battleship Coordinates:")
 print(correct_answers)
