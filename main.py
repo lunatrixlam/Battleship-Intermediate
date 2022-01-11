@@ -1,4 +1,4 @@
-# Create a Battleship Game with five rows and five columns. Use the randint method from the random library to call a random number. The user gets a certain # of total_guesses to sink a certaini number of total_ships battleships.
+# Create a Battleship Game with five rows and five columns. Use the randint method from the random library to call a random number. The user gets a certain # of total_guesses to sink a certain number of total_ships battleships.
 
 # First, we need to welcome the player:
 
