@@ -54,7 +54,7 @@ def random_col(board):
 
 correct_answers = []
 
-for i in range(total_ships):  # do this three times
+for i in range(total_ships):  # do this # of total_ships times
     ship_row = random_row(board)
     ship_col = random_col(board)
 
@@ -65,7 +65,7 @@ print(correct_answers)
 
 print()
 
-# Retrieve guesses from user and allow them five guesses:
+# Retrieve guesses from user and allow them # of total_guesses:
 
 point = 0
 
