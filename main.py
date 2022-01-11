@@ -23,8 +23,6 @@ print()
 
 # Next, we need to create our board:
 
-from random import randint
-
 board = []  # creates an empty list to set-up our board
 
 for i in range(5):
@@ -44,6 +42,8 @@ print_board(board)  # displays our Battleship board!
 print()
 
 # Next, we need to randomly call coordinates for our Battleship
+
+from random import randint
 
 def random_row(board):
     return randint(0, len(board) - 1)
