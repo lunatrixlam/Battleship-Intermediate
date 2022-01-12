@@ -1,5 +1,7 @@
 # Create a Battleship Game with five rows and five columns. Use the randint method from the random library to call a random number. The user gets a certain # of total_guesses to sink a certain number of total_ships battleships.
 
+from random import randint
+
 # First, we need to welcome the player:
 
 total_guesses = 5
@@ -38,8 +40,6 @@ print_board(board)  # displays our Battleship board!
 print()
 
 # Next, we need to randomly call coordinates for our Battleship
-
-from random import randint
 
 def random_row(board):
     return randint(0, len(board) - 1)
